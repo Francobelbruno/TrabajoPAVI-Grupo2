@@ -1,0 +1,11 @@
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\bin\Debug\TrabajoPAVI-Grupo2.exe.config
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\bin\Debug\TrabajoPAVI-Grupo2.exe
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\bin\Debug\TrabajoPAVI-Grupo2.pdb
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.AssemblyReference.cache
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.SuggestedBindingRedirects.cache
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.FrmBarrios.resources
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.Properties.Resources.resources
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.GenerateResource.cache
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.CoreCompileInputs.cache
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.exe
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.pdb
