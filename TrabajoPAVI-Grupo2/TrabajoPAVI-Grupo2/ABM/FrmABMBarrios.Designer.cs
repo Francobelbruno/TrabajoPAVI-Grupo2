@@ -1,4 +1,6 @@
-﻿namespace TrabajoPAVI_Grupo2
+﻿using System;
+
+namespace TrabajoPAVI_Grupo2
 {
     partial class FrmBarrios
     {
@@ -29,14 +31,25 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdBarrio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombreBarrio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtCodPos = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCiudad = new System.Windows.Forms.ComboBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.dataBarrio = new System.Windows.Forms.DataGridView();
+            this.IdBarrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdCiudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBarrio)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,12 +61,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Id Barrio:";
             // 
-            // textBox1
+            // txtIdBarrio
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtIdBarrio.Location = new System.Drawing.Point(92, 55);
+            this.txtIdBarrio.Name = "txtIdBarrio";
+            this.txtIdBarrio.Size = new System.Drawing.Size(143, 20);
+            this.txtIdBarrio.TabIndex = 1;
             // 
             // label2
             // 
@@ -65,12 +78,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Barrios";
             // 
-            // textBox2
+            // txtNombreBarrio
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtNombreBarrio.Location = new System.Drawing.Point(92, 90);
+            this.txtNombreBarrio.Name = "txtNombreBarrio";
+            this.txtNombreBarrio.Size = new System.Drawing.Size(143, 20);
+            this.txtNombreBarrio.TabIndex = 3;
             // 
             // label3
             // 
@@ -81,13 +94,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Nombre:";
             // 
-            // maskedTextBox1
+            // txtCodPos
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(92, 127);
-            this.maskedTextBox1.Mask = "00000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(143, 20);
-            this.maskedTextBox1.TabIndex = 5;
+            this.txtCodPos.Location = new System.Drawing.Point(92, 127);
+            this.txtCodPos.Mask = "00000";
+            this.txtCodPos.Name = "txtCodPos";
+            this.txtCodPos.Size = new System.Drawing.Size(143, 20);
+            this.txtCodPos.TabIndex = 5;
             // 
             // label4
             // 
@@ -107,36 +120,138 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Ciudad:";
             // 
-            // comboBox1
+            // cmbCiudad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbCiudad.FormattingEnabled = true;
+            this.cmbCiudad.Items.AddRange(new object[] {
             "Cordoba",
             "Buenos Aires",
             "Santa Fe"});
-            this.comboBox1.Location = new System.Drawing.Point(92, 163);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 21);
-            this.comboBox1.TabIndex = 8;
+            this.cmbCiudad.Location = new System.Drawing.Point(92, 163);
+            this.cmbCiudad.Name = "cmbCiudad";
+            this.cmbCiudad.Size = new System.Drawing.Size(143, 21);
+            this.cmbCiudad.TabIndex = 8;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(44, 212);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultar.TabIndex = 9;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(160, 228);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 10;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(44, 250);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 11;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(44, 289);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(160, 269);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 12;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
+            // 
+            // dataBarrio
+            // 
+            this.dataBarrio.AllowUserToAddRows = false;
+            this.dataBarrio.AllowUserToDeleteRows = false;
+            this.dataBarrio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBarrio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdBarrio,
+            this.Nombre,
+            this.CodigoPostal,
+            this.IdCiudad});
+            this.dataBarrio.Location = new System.Drawing.Point(265, 58);
+            this.dataBarrio.Name = "dataBarrio";
+            this.dataBarrio.ReadOnly = true;
+            this.dataBarrio.Size = new System.Drawing.Size(396, 254);
+            this.dataBarrio.TabIndex = 13;
+            // 
+            // IdBarrio
+            // 
+            this.IdBarrio.DataPropertyName = "idBarrio";
+            this.IdBarrio.HeaderText = "Id Barrio";
+            this.IdBarrio.Name = "IdBarrio";
+            this.IdBarrio.ReadOnly = true;
+            this.IdBarrio.Width = 70;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // CodigoPostal
+            // 
+            this.CodigoPostal.DataPropertyName = "CodPostal";
+            this.CodigoPostal.HeaderText = "Codigo Postal";
+            this.CodigoPostal.Name = "CodigoPostal";
+            this.CodigoPostal.ReadOnly = true;
+            // 
+            // IdCiudad
+            // 
+            this.IdCiudad.DataPropertyName = "IdCiudad";
+            this.IdCiudad.HeaderText = "Id Ciudad";
+            this.IdCiudad.Name = "IdCiudad";
+            this.IdCiudad.ReadOnly = true;
             // 
             // FrmBarrios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(614, 340);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(673, 341);
+            this.Controls.Add(this.dataBarrio);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnConsultar);
+            this.Controls.Add(this.cmbCiudad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.txtCodPos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNombreBarrio);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIdBarrio);
             this.Controls.Add(this.label1);
             this.Name = "FrmBarrios";
             this.Text = "FormABMBarrios";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataBarrio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,14 +260,25 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdBarrio;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombreBarrio;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtCodPos;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbCiudad;
+        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.DataGridView dataBarrio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdBarrio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoPostal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdCiudad;
+        private EventHandler btnAgregar_Click;
     }
 }
 
