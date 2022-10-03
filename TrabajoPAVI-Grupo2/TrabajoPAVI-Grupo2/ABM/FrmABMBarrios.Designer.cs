@@ -123,10 +123,6 @@ namespace TrabajoPAVI_Grupo2
             // cmbCiudad
             // 
             this.cmbCiudad.FormattingEnabled = true;
-            this.cmbCiudad.Items.AddRange(new object[] {
-            "Cordoba",
-            "Buenos Aires",
-            "Santa Fe"});
             this.cmbCiudad.Location = new System.Drawing.Point(92, 163);
             this.cmbCiudad.Name = "cmbCiudad";
             this.cmbCiudad.Size = new System.Drawing.Size(143, 21);
@@ -200,7 +196,7 @@ namespace TrabajoPAVI_Grupo2
             // 
             // IdBarrio
             // 
-            this.IdBarrio.DataPropertyName = "idBarrio";
+            this.IdBarrio.DataPropertyName = "id_Barrio";
             this.IdBarrio.HeaderText = "Id Barrio";
             this.IdBarrio.Name = "IdBarrio";
             this.IdBarrio.ReadOnly = true;
@@ -208,21 +204,21 @@ namespace TrabajoPAVI_Grupo2
             // 
             // Nombre
             // 
-            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.DataPropertyName = "nombre";
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             // 
             // CodigoPostal
             // 
-            this.CodigoPostal.DataPropertyName = "CodPostal";
+            this.CodigoPostal.DataPropertyName = "codigo_postal";
             this.CodigoPostal.HeaderText = "Codigo Postal";
             this.CodigoPostal.Name = "CodigoPostal";
             this.CodigoPostal.ReadOnly = true;
             // 
             // IdCiudad
             // 
-            this.IdCiudad.DataPropertyName = "IdCiudad";
+            this.IdCiudad.DataPropertyName = "Id_Ciudad";
             this.IdCiudad.HeaderText = "Id Ciudad";
             this.IdCiudad.Name = "IdCiudad";
             this.IdCiudad.ReadOnly = true;
@@ -274,11 +270,11 @@ namespace TrabajoPAVI_Grupo2
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dataBarrio;
+        private EventHandler btnAgregar_Click;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdBarrio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodigoPostal;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdCiudad;
-        private EventHandler btnAgregar_Click;
     }
 }
 

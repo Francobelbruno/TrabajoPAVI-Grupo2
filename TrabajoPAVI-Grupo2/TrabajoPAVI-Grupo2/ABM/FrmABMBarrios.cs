@@ -20,43 +20,29 @@ namespace TrabajoPAVI_Grupo2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand();
 
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
+                
+            string consulta = "SELECT * FROM Ciudades ";
+            
+            cmd.Parameters.Clear();        
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = consulta;
+            cn.Open();
+            cmd.Connection = cn;
 
-                string consulta = "SELECT * FROM Ciudades ";
-                cmd.Parameters.Clear();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = consulta;
-
-                cn.Open();
-                cmd.Connection = cn;
-
-                DataTable tabla = new DataTable();
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tabla);
-
-                cmbCiudad.DataSource = tabla;
-                cmbCiudad.DisplayMember = "Nombres";
-                cmbCiudad.ValueMember = "idCiudad";
-                cmbCiudad.SelectedIndex = -1;
-
-
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally
-            {
-                cn.Close();
-            }
+            DataTable tabla = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);    
+            da.Fill(tabla);
+            
+            cmbCiudad.DataSource = tabla;
+            cmbCiudad.DisplayMember = "Nombres";
+            cmbCiudad.ValueMember = "id_ciudad";
+            cmbCiudad.SelectedIndex = -1;
+            cn.Close();
             CargarGrillaBarrios();
         }
 
@@ -105,7 +91,7 @@ namespace TrabajoPAVI_Grupo2
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "SELECT * FROM Barrio";
+                string consulta = "SELECT * FROM BARRIOS";
                 cmd.Parameters.Clear();
 
                 cmd.CommandType = CommandType.Text;
@@ -132,7 +118,7 @@ namespace TrabajoPAVI_Grupo2
 
         }
 
-        //---------------------------------------AGREGAR BARRIO--------------------------------------------------------------
+        //---------------------------------------INSERTAR BARRIO--------------------------------------------------------------
         private bool InsertarBarrio(string nombre, string codigoPostal, int ciudad)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
@@ -144,11 +130,11 @@ namespace TrabajoPAVI_Grupo2
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "INSERT INTO Barrio (Nombre, CodPostal, IdCiudad ) VALUES (@nombre, @codPostal, @idCiudad)";
+                string consulta = "INSERT INTO BARRIOS (Nombre, Codigo_Postal, Id_Ciudad ) VALUES (@nombre, @codigo_Postal, @id_Ciudad)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombre", nombre);
-                cmd.Parameters.AddWithValue("@codPostal", codigoPostal);
-                cmd.Parameters.AddWithValue("@idCiudad", ciudad);
+                cmd.Parameters.AddWithValue("@codigo_Postal", codigoPostal);
+                cmd.Parameters.AddWithValue("@id_Ciudad", ciudad);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -220,12 +206,12 @@ namespace TrabajoPAVI_Grupo2
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "UPDATE Barrio SET Nombre =  @nombre, CodPostal = @codPostal, IdCiudad = @idCiudad WHERE IdBarrio = @idBarrio";
+                string consulta = "UPDATE BARRIOS SET Nombre =  @nombre, Codigo_Postal = @codigo_Postal, Id_Ciudad = @idCiudad WHERE Id_Barrio = @id_Barrio";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombre", txtNombreBarrio.Text);
-                cmd.Parameters.AddWithValue("@codPostal", txtCodPos.Text);
-                cmd.Parameters.AddWithValue("@idCiudad", (int)cmbCiudad.SelectedValue);
-                cmd.Parameters.AddWithValue("@idBarrio", txtIdBarrio.Text);
+                cmd.Parameters.AddWithValue("@codigo_Postal", txtCodPos.Text);
+                cmd.Parameters.AddWithValue("@id_Ciudad", (int)cmbCiudad.SelectedValue);
+                cmd.Parameters.AddWithValue("@id_Barrio", txtIdBarrio.Text);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -267,9 +253,9 @@ namespace TrabajoPAVI_Grupo2
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "DELETE FROM Barrio WHERE IdBarrio = @idBarrio";
+                string consulta = "DELETE FROM BARRIOS WHERE IdBarrio = @idBarrio";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@idBarrio", txtIdBarrio.Text);
+                cmd.Parameters.AddWithValue("@id_Barrio", txtIdBarrio.Text);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
 
@@ -310,7 +296,7 @@ namespace TrabajoPAVI_Grupo2
             {
 
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM Barrio WHERE ";
+                string consulta = "SELECT * FROM BARRIOS WHERE ";
                 int contador = 0;
                 bool ciudad = false;
 
@@ -325,12 +311,12 @@ namespace TrabajoPAVI_Grupo2
                 {
                     if (contador == 0)
                     {
-                        consulta = consulta + "CodPostal = @codPostal";
+                        consulta = consulta + "Codigo_Postal = @codigo_Postal";
                         contador = contador + 1;
                     }
                     else
                     {
-                        consulta = consulta + " AND CodPostal = @codPostal";
+                        consulta = consulta + " AND Codigo_Postal = @codigo_Postal";
 
                     }
 
@@ -341,12 +327,12 @@ namespace TrabajoPAVI_Grupo2
                     ciudad = true;
                     if (contador == 0)
                     {
-                        consulta = consulta + "IdCiudad = @idCiudad";
+                        consulta = consulta + "Id_Ciudad = @id_Ciudad";
                         contador = contador + 1;
                     }
                     else
                     {
-                        consulta = consulta + " AND IdCiudad = @idCiudad";
+                        consulta = consulta + " AND Id_Ciudad = @id_Ciudad";
                     }
 
                 }
@@ -359,12 +345,12 @@ namespace TrabajoPAVI_Grupo2
                 {
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("@nombre", txtNombreBarrio.Text.Trim());
-                    cmd.Parameters.AddWithValue("@codPostal", txtCodPos.Text.Trim());
+                    cmd.Parameters.AddWithValue("@codigo_Postal", txtCodPos.Text.Trim());
                     if (ciudad)
                     {
-                        cmd.Parameters.AddWithValue("@idCiudad", (int)cmbCiudad.SelectedValue);
+                        cmd.Parameters.AddWithValue("@id_Ciudad", (int)cmbCiudad.SelectedValue);
                     }
-                    cmd.Parameters.AddWithValue("@idBarrio", txtIdBarrio.Text.Trim());
+                    cmd.Parameters.AddWithValue("@id_Barrio", txtIdBarrio.Text.Trim());
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = consulta;
 
@@ -393,7 +379,6 @@ namespace TrabajoPAVI_Grupo2
             }
 
         }
-
 
     }
 }
