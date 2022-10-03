@@ -79,8 +79,8 @@ namespace TrabajoPAVI_Grupo2
                     MessageBox.Show(ex.Message);
                 }
             }
-        }
 
+        }
         //---------------------------------------LIMPIAR CAMPOS--------------------------------------------------------------
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
