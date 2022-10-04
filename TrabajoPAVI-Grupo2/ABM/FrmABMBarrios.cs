@@ -265,7 +265,7 @@ namespace TrabajoPAVI_Grupo2
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "DELETE FROM BARRIOS WHERE IdBarrio = @idBarrio";
+                string consulta = "DELETE FROM BARRIOS WHERE Id_Barrio = @idBarrio";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id_Barrio", txtIdBarrio.Text);
                 cmd.CommandType = CommandType.Text;

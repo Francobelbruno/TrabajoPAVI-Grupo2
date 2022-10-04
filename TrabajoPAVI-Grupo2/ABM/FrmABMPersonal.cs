@@ -253,7 +253,7 @@ namespace TrabajoPAVI_Grupo2.ABM
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "INSERT INTO Personal(Tipo_documento, Nro_Documento, Apellido, Nombres, id_usuario, Fecha_Ingreso, Fecha_Egreso, Motivo_Egreso, Id_Barrio, Calle, Nro_Calle, Fecha_Nacimiento, Cod_Proyecto_asignado) VALUES ( @Tipo_documento, @nro_documento, @Apellido, @Nombres, @id_suario, @Fecha_Ingreso, @Fecha_Egreso, @Motivo_Egreso, @Id_Barrio, @Calle, @Nro_Calle, @Fecha_Nacimiento,@Cod_Proyecto_asignado)";
+                string consulta = "INSERT INTO Personal(Tipo_documento, Nro_Documento, Apellido, Nombres, id_usuario, Fecha_Ingreso, Fecha_Egreso, Motivo_Egreso, Id_Barrio, Calle, Nro_Calle, Fecha_Nacimiento, Cod_Proyecto_asignado) VALUES ( @Tipo_documento, @nro_documento, @Apellido, @Nombres, @id_usuario, @Fecha_Ingreso, @Fecha_Egreso, @Motivo_Egreso, @Id_Barrio, @Calle, @Nro_Calle, @Fecha_Nacimiento,@Cod_Proyecto_asignado)";
 
                 cmd.Parameters.AddWithValue("@Tipo_documento", per.TipoDocPersonal);
                 cmd.Parameters.AddWithValue("@nro_Documento", per.DocumentoPersonal);

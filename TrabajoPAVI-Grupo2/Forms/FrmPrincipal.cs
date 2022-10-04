@@ -67,5 +67,23 @@ namespace TrabajoPAVI_Grupo2.Forms
             abmClientes altaClientes = new abmClientes();
             altaClientes.Show();
         }
+
+        private void aBMMotivoDeEgresoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMMotivo_egreso altaMotivo_Egreso = new ABMMotivo_egreso();
+            altaMotivo_Egreso.Show();
+        }
+
+        private void aBMHerramientasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMHerramientas altaHerramientas = new ABMHerramientas();
+            altaHerramientas.Show();    
+        }
+
+        private void aBMUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmABMCUsuario altaUsuario = new frmABMCUsuario();
+            altaUsuario.Show();
+        }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.btnEliminar = new System.Windows.Forms.Button();
             this.grpEliminarMotivo = new System.Windows.Forms.GroupBox();
-            this.mskIDEliminar = new System.Windows.Forms.MaskedTextBox();
+            this.txtEliminar = new System.Windows.Forms.MaskedTextBox();
             this.lblIDEliminar = new System.Windows.Forms.Label();
             this.grdMotEgr = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,16 +50,17 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(111, 478);
+            this.btnEliminar.Location = new System.Drawing.Point(125, 468);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(90, 50);
             this.btnEliminar.TabIndex = 16;
             this.btnEliminar.Text = "Eliminar motivo";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // grpEliminarMotivo
             // 
-            this.grpEliminarMotivo.Controls.Add(this.mskIDEliminar);
+            this.grpEliminarMotivo.Controls.Add(this.txtEliminar);
             this.grpEliminarMotivo.Controls.Add(this.lblIDEliminar);
             this.grpEliminarMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.grpEliminarMotivo.Location = new System.Drawing.Point(30, 370);
@@ -69,14 +70,15 @@
             this.grpEliminarMotivo.TabStop = false;
             this.grpEliminarMotivo.Text = "Eliminar motivo";
             // 
-            // mskIDEliminar
+            // txtEliminar
             // 
-            this.mskIDEliminar.Location = new System.Drawing.Point(116, 39);
-            this.mskIDEliminar.Mask = "000";
-            this.mskIDEliminar.Name = "mskIDEliminar";
-            this.mskIDEliminar.Size = new System.Drawing.Size(60, 32);
-            this.mskIDEliminar.TabIndex = 7;
-            this.mskIDEliminar.ValidatingType = typeof(int);
+            this.txtEliminar.Location = new System.Drawing.Point(116, 39);
+            this.txtEliminar.Mask = "9999";
+            this.txtEliminar.Name = "txtEliminar";
+            this.txtEliminar.Size = new System.Drawing.Size(60, 32);
+            this.txtEliminar.TabIndex = 7;
+            this.txtEliminar.ValidatingType = typeof(int);
+         
             // 
             // lblIDEliminar
             // 
@@ -147,6 +149,7 @@
             this.btnBorrar.TabIndex = 12;
             this.btnBorrar.Text = "Borrar Campo";
             this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click_1);
             // 
             // btnGuardar
             // 
@@ -158,6 +161,7 @@
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // groupBox1
             // 
@@ -196,6 +200,7 @@
             this.Name = "ABMMotivo_egreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABMMotivo_egreso";
+            this.Load += new System.EventHandler(this.ABMMotivo_egreso_Load_1);
             this.grpEliminarMotivo.ResumeLayout(false);
             this.grpEliminarMotivo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdMotEgr)).EndInit();
@@ -210,7 +215,7 @@
 
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.GroupBox grpEliminarMotivo;
-        private System.Windows.Forms.MaskedTextBox mskIDEliminar;
+        private System.Windows.Forms.MaskedTextBox txtEliminar;
         private System.Windows.Forms.Label lblIDEliminar;
         private System.Windows.Forms.DataGridView grdMotEgr;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;

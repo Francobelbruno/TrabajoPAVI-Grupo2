@@ -12,7 +12,8 @@ namespace TrabajoPAVI_Grupo2.ABM
             InitializeComponent();
         }
 
-        private void ABMMotivo_egreso_Load(object sender, EventArgs e)
+
+        private void ABMMotivo_egreso_Load_1(object sender, EventArgs e)
         {
             CargarGrilla();
         }
@@ -59,15 +60,15 @@ namespace TrabajoPAVI_Grupo2.ABM
         private void BorrarCampos()
         {
             txtMotEgre.Text = "";
-            mskIDEliminar.Text = "";
+            txtEliminar.Text = "";
         }
 
-        private void btnBorrar_Click(object sender, EventArgs e)
+        private void btnBorrar_Click_1(object sender, EventArgs e)
         {
             BorrarCampos();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             if (txtMotEgre.Text.Equals(""))
             {
@@ -112,10 +113,15 @@ namespace TrabajoPAVI_Grupo2.ABM
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (mskIDEliminar.Text.Equals("") || (int.Parse(mskIDEliminar.Text) > grdMotEgr.RowCount))
+            EliminarMotivo();
+        }
+
+        private void EliminarMotivo()
+        {
+            if (txtEliminar.Text.Equals("") || (int.Parse(txtEliminar.Text) > grdMotEgr.RowCount))
             {
                 MessageBox.Show("Ingrese un ID válido para eliminar");
-                mskIDEliminar.Focus();
+                txtEliminar.Focus();
             }
             else
             {
@@ -129,7 +135,7 @@ namespace TrabajoPAVI_Grupo2.ABM
                     string consulta = "DELETE FROM MOTIVO_EGRESOS WHERE id_motivo = @id_motivo";
 
                     cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@id_motivo", mskIDEliminar.Text);
+                    cmd.Parameters.AddWithValue("@id_motivo", txtEliminar.Text);
 
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = consulta;
@@ -148,9 +154,10 @@ namespace TrabajoPAVI_Grupo2.ABM
                     cn.Close();
                 }
             }
-
             BorrarCampos();
             CargarGrilla();
         }
     }
+        
+   
 }

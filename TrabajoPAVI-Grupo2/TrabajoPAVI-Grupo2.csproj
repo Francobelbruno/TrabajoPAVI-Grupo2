@@ -83,6 +83,12 @@
     <Compile Include="ABM\ABMEtapas.Designer.cs">
       <DependentUpon>ABMEtapas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\frmABMCUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\frmABMCUsuario.designer.cs">
+      <DependentUpon>frmABMCUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM\FrmABMEtapasXProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\ABMEtapas.resx">
       <DependentUpon>ABMEtapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\frmABMCUsuario.resx">
+      <DependentUpon>frmABMCUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\FrmABMEtapasXProyecto.resx">
       <DependentUpon>FrmABMEtapasXProyecto.cs</DependentUpon>

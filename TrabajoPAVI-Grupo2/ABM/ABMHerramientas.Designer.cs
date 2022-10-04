@@ -43,6 +43,7 @@
             this.lblConsultaHer = new System.Windows.Forms.Label();
             this.txtConsultaHer = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnGrilla = new System.Windows.Forms.Button();
             this.grpAltaHerr.SuspendLayout();
             this.grpEliminarHer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdHer)).BeginInit();
@@ -89,6 +90,7 @@
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // grpEliminarHer
             // 
@@ -106,7 +108,7 @@
             // mskIDEliminarHer
             // 
             this.mskIDEliminarHer.Location = new System.Drawing.Point(155, 39);
-            this.mskIDEliminarHer.Mask = "000";
+            this.mskIDEliminarHer.Mask = "9999";
             this.mskIDEliminarHer.Name = "mskIDEliminarHer";
             this.mskIDEliminarHer.Size = new System.Drawing.Size(60, 32);
             this.mskIDEliminarHer.TabIndex = 7;
@@ -122,6 +124,7 @@
             this.btnEliminarHer.TabIndex = 16;
             this.btnEliminarHer.Text = "Eliminar herramienta";
             this.btnEliminarHer.UseVisualStyleBackColor = false;
+            this.btnEliminarHer.Click += new System.EventHandler(this.btnEliminarHer_Click_1);
             // 
             // lblEliminarHer
             // 
@@ -165,6 +168,7 @@
             // 
             // grpConsultarHer
             // 
+            this.grpConsultarHer.Controls.Add(this.btnGrilla);
             this.grpConsultarHer.Controls.Add(this.lblConsultaHer);
             this.grpConsultarHer.Controls.Add(this.txtConsultaHer);
             this.grpConsultarHer.Controls.Add(this.btnBuscar);
@@ -203,6 +207,19 @@
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
+            // 
+            // btnGrilla
+            // 
+            this.btnGrilla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnGrilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrilla.Location = new System.Drawing.Point(261, 102);
+            this.btnGrilla.Name = "btnGrilla";
+            this.btnGrilla.Size = new System.Drawing.Size(90, 36);
+            this.btnGrilla.TabIndex = 12;
+            this.btnGrilla.Text = "Mostrar";
+            this.btnGrilla.UseVisualStyleBackColor = false;
+            this.btnGrilla.Click += new System.EventHandler(this.btnGrilla_Click);
             // 
             // ABMHerramientas
             // 
@@ -217,6 +234,7 @@
             this.Name = "ABMHerramientas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABMHerramientas";
+            this.Load += new System.EventHandler(this.ABMHerramientas_Load);
             this.grpAltaHerr.ResumeLayout(false);
             this.grpAltaHerr.PerformLayout();
             this.grpEliminarHer.ResumeLayout(false);
@@ -245,5 +263,6 @@
         private System.Windows.Forms.Label lblConsultaHer;
         private System.Windows.Forms.TextBox txtConsultaHer;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnGrilla;
     }
 }

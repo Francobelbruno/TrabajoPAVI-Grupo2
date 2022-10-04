@@ -39,11 +39,15 @@
             this.aBMProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMMotivoDeEgresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otrosABMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMBarriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBMClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMHerramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.aBMUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +69,8 @@
             // 
             // sistemaToolStripMenuItem
             // 
+            this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMUsuariosToolStripMenuItem});
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.sistemaToolStripMenuItem.Text = "Sistema";
@@ -80,7 +86,7 @@
             // aBMProductosToolStripMenuItem
             // 
             this.aBMProductosToolStripMenuItem.Name = "aBMProductosToolStripMenuItem";
-            this.aBMProductosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.aBMProductosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMProductosToolStripMenuItem.Text = "ABM Productos";
             this.aBMProductosToolStripMenuItem.Click += new System.EventHandler(this.aBMProductosToolStripMenuItem_Click);
             // 
@@ -118,7 +124,8 @@
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMPersonalToolStripMenuItem});
+            this.aBMPersonalToolStripMenuItem,
+            this.aBMMotivoDeEgresoToolStripMenuItem});
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.empleadosToolStripMenuItem.Text = "Personal";
@@ -126,9 +133,16 @@
             // aBMPersonalToolStripMenuItem
             // 
             this.aBMPersonalToolStripMenuItem.Name = "aBMPersonalToolStripMenuItem";
-            this.aBMPersonalToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.aBMPersonalToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.aBMPersonalToolStripMenuItem.Text = "ABM Personal";
             this.aBMPersonalToolStripMenuItem.Click += new System.EventHandler(this.aBMPersonalToolStripMenuItem_Click);
+            // 
+            // aBMMotivoDeEgresoToolStripMenuItem
+            // 
+            this.aBMMotivoDeEgresoToolStripMenuItem.Name = "aBMMotivoDeEgresoToolStripMenuItem";
+            this.aBMMotivoDeEgresoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.aBMMotivoDeEgresoToolStripMenuItem.Text = "ABM Motivo de Egreso";
+            this.aBMMotivoDeEgresoToolStripMenuItem.Click += new System.EventHandler(this.aBMMotivoDeEgresoToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -137,6 +151,13 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            // 
+            // aBMClientesToolStripMenuItem
+            // 
+            this.aBMClientesToolStripMenuItem.Name = "aBMClientesToolStripMenuItem";
+            this.aBMClientesToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.aBMClientesToolStripMenuItem.Text = "ABM Clientes";
+            this.aBMClientesToolStripMenuItem.Click += new System.EventHandler(this.aBMClientesToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem
             // 
@@ -147,7 +168,8 @@
             // otrosABMToolStripMenuItem
             // 
             this.otrosABMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMBarriosToolStripMenuItem});
+            this.aBMBarriosToolStripMenuItem,
+            this.aBMHerramientasToolStripMenuItem});
             this.otrosABMToolStripMenuItem.Name = "otrosABMToolStripMenuItem";
             this.otrosABMToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.otrosABMToolStripMenuItem.Text = "Otros ABM";
@@ -155,16 +177,33 @@
             // aBMBarriosToolStripMenuItem
             // 
             this.aBMBarriosToolStripMenuItem.Name = "aBMBarriosToolStripMenuItem";
-            this.aBMBarriosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.aBMBarriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMBarriosToolStripMenuItem.Text = "ABM Barrios";
             this.aBMBarriosToolStripMenuItem.Click += new System.EventHandler(this.aBMBarriosToolStripMenuItem_Click);
             // 
-            // aBMClientesToolStripMenuItem
+            // aBMHerramientasToolStripMenuItem
             // 
-            this.aBMClientesToolStripMenuItem.Name = "aBMClientesToolStripMenuItem";
-            this.aBMClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aBMClientesToolStripMenuItem.Text = "ABM Clientes";
-            this.aBMClientesToolStripMenuItem.Click += new System.EventHandler(this.aBMClientesToolStripMenuItem_Click);
+            this.aBMHerramientasToolStripMenuItem.Name = "aBMHerramientasToolStripMenuItem";
+            this.aBMHerramientasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMHerramientasToolStripMenuItem.Text = "ABM Herramientas";
+            this.aBMHerramientasToolStripMenuItem.Click += new System.EventHandler(this.aBMHerramientasToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Script MT Bold", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(689, 608);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(462, 81);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "NewWare- Soft";
+            // 
+            // aBMUsuariosToolStripMenuItem
+            // 
+            this.aBMUsuariosToolStripMenuItem.Name = "aBMUsuariosToolStripMenuItem";
+            this.aBMUsuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMUsuariosToolStripMenuItem.Text = "ABM Usuarios";
+            this.aBMUsuariosToolStripMenuItem.Click += new System.EventHandler(this.aBMUsuariosToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -172,6 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(1185, 716);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -205,5 +245,9 @@
         private System.Windows.Forms.ToolStripMenuItem aBMProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMProyectosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMClientesToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem aBMMotivoDeEgresoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMHerramientasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMUsuariosToolStripMenuItem;
     }
 }
