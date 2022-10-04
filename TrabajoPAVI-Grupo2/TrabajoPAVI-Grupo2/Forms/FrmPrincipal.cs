@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TPPAV1;
 using TrabajoPAVI_Grupo2.ABM;
 using TrabajoPAVI_Grupo2.Entidades;
 
@@ -34,6 +35,12 @@ namespace TrabajoPAVI_Grupo2.Forms
         {
             FrmABMPersonal altaPersonal = new FrmABMPersonal();
             altaPersonal.Show();
+        }
+
+        private void aBMEtapasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formABMEtapa altaEtapas = new formABMEtapa();
+            altaEtapas.Show();
         }
     }
 }

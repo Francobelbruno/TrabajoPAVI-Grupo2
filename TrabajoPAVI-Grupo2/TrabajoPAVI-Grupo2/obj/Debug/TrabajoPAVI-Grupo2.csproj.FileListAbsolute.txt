@@ -13,3 +13,5 @@ C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\ob
 C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\PruebaPAV.abmClientes.resources
 C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.Forms.FrmInicioSesion.resources
 C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.Forms.FrmPrincipal.resources
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TPPAV1.formABMEtapa.resources
+C:\Users\franb\OneDrive\Escritorio\PAVI\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TPPAV1.FrmABMEtapasXProyecto.resources

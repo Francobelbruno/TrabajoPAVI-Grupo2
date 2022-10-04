@@ -53,6 +53,18 @@
     <Compile Include="ABM\ABMClientes.Designer.cs">
       <DependentUpon>ABMClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\formABMEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\formABMEtapas.Designer.cs">
+      <DependentUpon>formABMEtapas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\FrmABMEtapasXProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\FrmABMEtapasXProyecto.Designer.cs">
+      <DependentUpon>FrmABMEtapasXProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM\FrmABMBarrios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,8 @@
     <Compile Include="ABM\FrmABMPersonal.Designer.cs">
       <DependentUpon>FrmABMPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\Etapa.cs" />
+    <Compile Include="Entidades\EtapaXProyecto.cs" />
     <Compile Include="Entidades\Personal.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Forms\FrmInicioSesion.cs">
@@ -83,6 +97,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ABM\ABMClientes.resx">
       <DependentUpon>ABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\formABMEtapas.resx">
+      <DependentUpon>formABMEtapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\FrmABMEtapasXProyecto.resx">
+      <DependentUpon>FrmABMEtapasXProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\FrmABMBarrios.resx">
       <DependentUpon>FrmABMBarrios.cs</DependentUpon>
