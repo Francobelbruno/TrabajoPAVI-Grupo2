@@ -213,7 +213,9 @@
             this.Controls.Add(this.grpEliminarHer);
             this.Controls.Add(this.grdHer);
             this.Controls.Add(this.grpConsultarHer);
+            this.MaximizeBox = false;
             this.Name = "ABMHerramientas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABMHerramientas";
             this.grpAltaHerr.ResumeLayout(false);
             this.grpAltaHerr.PerformLayout();

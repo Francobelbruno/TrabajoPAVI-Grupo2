@@ -59,6 +59,12 @@
     <Compile Include="ABM\ABMHerramientas.Designer.cs">
       <DependentUpon>ABMHerramientas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\ABMMotivo_egreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\ABMMotivo_egreso.Designer.cs">
+      <DependentUpon>ABMMotivo_egreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="ABM\ABMProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\ABMHerramientas.resx">
       <DependentUpon>ABMHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\ABMMotivo_egreso.resx">
+      <DependentUpon>ABMMotivo_egreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\ABMProductos.resx">
       <DependentUpon>ABMProductos.cs</DependentUpon>
