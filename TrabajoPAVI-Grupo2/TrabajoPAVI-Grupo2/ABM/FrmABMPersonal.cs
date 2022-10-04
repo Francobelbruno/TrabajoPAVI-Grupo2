@@ -380,7 +380,7 @@ namespace TrabajoPAVI_Grupo2.ABM
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "UPDATE Personal SET Tipo_documento= @Tipo_documento, nro_documento = @nro_documento, Apellido = @Apellido, Nombres = @Nombres, id_suario = @id_suario, Fecha_Ingreso = @Fecha_Ingreso, Fecha_Egreso = @Fecha_Egreso, Motivo_Egreso = @Motivo_Egreso, Id_Barrio =  @Id_Barrio, Calle = @Calle, Nro_Calle =  @Nro_Calle, Fecha_Nacimiento = @Fecha_Nacimiento, Cod_Proyecto_asignado = @Cod_Proyecto_asignado";
+                string consulta = "UPDATE Personal SET Tipo_documento= @Tipo_documento, nro_documento = @nro_documento, Apellido = @Apellido, Nombres = @Nombres, id_usuario = @id_usuario, Fecha_Ingreso = @Fecha_Ingreso, Fecha_Egreso = @Fecha_Egreso, Motivo_Egreso = @Motivo_Egreso, Id_Barrio =  @Id_Barrio, Calle = @Calle, Nro_Calle =  @Nro_Calle, Fecha_Nacimiento = @Fecha_Nacimiento, Cod_Proyecto_asignado = @Cod_Proyecto_asignado";
                 
       
                 cmd.Parameters.AddWithValue("@Tipo_documento", per.TipoDocPersonal);

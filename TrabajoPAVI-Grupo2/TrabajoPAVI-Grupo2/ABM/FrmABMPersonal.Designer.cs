@@ -336,12 +336,13 @@
             // 
             // bttnAgregar
             // 
+            this.bttnAgregar.BackColor = System.Drawing.Color.Lime;
             this.bttnAgregar.Location = new System.Drawing.Point(137, 416);
             this.bttnAgregar.Name = "bttnAgregar";
             this.bttnAgregar.Size = new System.Drawing.Size(118, 23);
             this.bttnAgregar.TabIndex = 33;
             this.bttnAgregar.Text = "Agregar";
-            this.bttnAgregar.UseVisualStyleBackColor = true;
+            this.bttnAgregar.UseVisualStyleBackColor = false;
             this.bttnAgregar.Click += new System.EventHandler(this.bttnAgregar_Click);
             // 
             // bttnLimpiarCampos

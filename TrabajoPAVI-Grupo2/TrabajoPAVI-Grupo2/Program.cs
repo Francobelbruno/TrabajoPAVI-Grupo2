@@ -1,9 +1,11 @@
-﻿using System;
+﻿using PruebaPAV;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoPAVI_Grupo2.ABM;
+using TrabajoPAVI_Grupo2.Forms;
 
 namespace TrabajoPAVI_Grupo2
 {
@@ -17,7 +19,7 @@ namespace TrabajoPAVI_Grupo2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmABMPersonal());
+            Application.Run(new FrmInicioSesion());
         }
     }
 }

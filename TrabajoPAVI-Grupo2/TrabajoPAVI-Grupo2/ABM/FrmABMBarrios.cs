@@ -218,7 +218,7 @@ namespace TrabajoPAVI_Grupo2
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "UPDATE BARRIOS SET Nombre =  @nombre, Codigo_Postal = @codigo_Postal, Id_Ciudad = @idCiudad WHERE Id_Barrio = @id_Barrio";
+                string consulta = "UPDATE BARRIOS SET Nombre =  @nombre, Codigo_Postal = @codigo_Postal, Id_Ciudad = @id_Ciudad WHERE Id_Barrio = @id_Barrio";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@nombre", txtNombreBarrio.Text);
                 cmd.Parameters.AddWithValue("@codigo_Postal", txtCodPos.Text);
