@@ -118,7 +118,7 @@ namespace TrabajoPAVI_Grupo2.ABM
 
         private void EliminarMotivo()
         {
-            if (txtEliminar.Text.Equals("") || (int.Parse(txtEliminar.Text) > grdMotEgr.RowCount))
+            if (txtEliminar.Text.Equals(""))
             {
                 MessageBox.Show("Ingrese un ID válido para eliminar");
                 txtEliminar.Focus();

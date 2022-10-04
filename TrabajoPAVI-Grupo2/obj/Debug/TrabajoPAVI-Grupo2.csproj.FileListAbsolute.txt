@@ -64,3 +64,26 @@ C:\Users\Daniel H\Source\Repos\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\T
 C:\Users\Daniel H\Source\Repos\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.CoreCompileInputs.cache
 C:\Users\Daniel H\Source\Repos\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.exe
 C:\Users\Daniel H\Source\Repos\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.pdb
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\bin\Debug\TrabajoPAVI-Grupo2.exe.config
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\bin\Debug\TrabajoPAVI-Grupo2.exe
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\bin\Debug\TrabajoPAVI-Grupo2.pdb
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.AssemblyReference.cache
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.SuggestedBindingRedirects.cache
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.abmClientes.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.ABM.ABMHerramientas.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.ABM.ABMMotivo_egreso.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.ABMProductos.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.ABMProyecto.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\trabajoPAVI_Grupo2.formABMEtapa.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.ABM.frmABMCUsuario.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.FrmABMEtapasXProyecto.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.FrmBarrios.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.ABM.FrmABMPersonal.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.Forms.FrmInicioSesion.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.Forms.FrmPrincipal.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.Properties.Resources.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI_Grupo2.SolicitarID.resources
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.GenerateResource.cache
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.csproj.CoreCompileInputs.cache
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.exe
+G:\My Drive\UTN FRC\PAV\TP\NewWareSoft\TrabajoPAVI-Grupo2\TrabajoPAVI-Grupo2\obj\Debug\TrabajoPAVI-Grupo2.pdb

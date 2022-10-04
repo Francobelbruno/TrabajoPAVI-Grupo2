@@ -215,7 +215,7 @@ namespace TrabajoPAVI_Grupo2
         {
             using (SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.AppSettings["CadenaBD"]))
             {
-                string query = "SELECT COUNT(*) FROM dbo].[ETAPASxPROYECTO WHERE cod_proyecto = @cod_proyecto  AND id_etapa = @id_etapa";
+                string query = "SELECT COUNT(*) FROM ETAPASxPROYECTO WHERE cod_proyecto = @cod_proyecto  AND id_etapa = @id_etapa";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id_etapa", id_etapa);
                 cmd.Parameters.AddWithValue("@cod_proyecto", cod_proyecto.ToString());
