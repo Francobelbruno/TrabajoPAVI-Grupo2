@@ -23,7 +23,7 @@ namespace TrabajoPAVI_Grupo2.Forms
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void aBMBarriosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,5 +67,8 @@ namespace TrabajoPAVI_Grupo2.Forms
             abmClientes altaClientes = new abmClientes();
             altaClientes.Show();
         }
+
+
+
     }
 }

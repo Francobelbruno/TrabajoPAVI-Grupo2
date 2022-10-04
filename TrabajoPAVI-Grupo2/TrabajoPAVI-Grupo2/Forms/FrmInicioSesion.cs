@@ -95,6 +95,11 @@ namespace TrabajoPAVI_Grupo2.Forms
             }
 
         }
+
+        private void FrmInicioSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

@@ -105,6 +105,7 @@
             this.Name = "FrmInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmInicioSesion";
+            this.Load += new System.EventHandler(this.FrmInicioSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
