@@ -62,17 +62,17 @@
             this.bttnLimpiarCampos = new System.Windows.Forms.Button();
             this.bttnModificar = new System.Windows.Forms.Button();
             this.GrillaDelPersonal = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoProyecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label15 = new System.Windows.Forms.Label();
             this.txtNombrePersonal = new System.Windows.Forms.TextBox();
             this.txtDocumentoPersonal = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.bttnEliminar = new System.Windows.Forms.Button();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodigoProyecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDocumento = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaDelPersonal)).BeginInit();
             this.SuspendLayout();
@@ -379,8 +379,45 @@
             this.GrillaDelPersonal.Location = new System.Drawing.Point(277, 35);
             this.GrillaDelPersonal.Name = "GrillaDelPersonal";
             this.GrillaDelPersonal.ReadOnly = true;
-            this.GrillaDelPersonal.Size = new System.Drawing.Size(437, 259);
+            this.GrillaDelPersonal.Size = new System.Drawing.Size(494, 259);
             this.GrillaDelPersonal.TabIndex = 36;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "nombres";
+            this.Nombre.HeaderText = "Nombres";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Legajo
+            // 
+            this.Legajo.DataPropertyName = "legajo";
+            this.Legajo.HeaderText = "Legajo";
+            this.Legajo.Name = "Legajo";
+            this.Legajo.ReadOnly = true;
+            this.Legajo.Width = 70;
+            // 
+            // Apellido
+            // 
+            this.Apellido.DataPropertyName = "apellido";
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            // 
+            // CodigoProyecto
+            // 
+            this.CodigoProyecto.DataPropertyName = "cod_proyecto_asignado";
+            this.CodigoProyecto.HeaderText = "Codigo Proyecto";
+            this.CodigoProyecto.Name = "CodigoProyecto";
+            this.CodigoProyecto.ReadOnly = true;
+            this.CodigoProyecto.Width = 70;
+            // 
+            // Documento
+            // 
+            this.Documento.DataPropertyName = "nro_documento";
+            this.Documento.HeaderText = "Documento";
+            this.Documento.Name = "Documento";
+            this.Documento.ReadOnly = true;
             // 
             // label15
             // 
@@ -434,43 +471,6 @@
             this.bttnEliminar.UseVisualStyleBackColor = true;
             this.bttnEliminar.Click += new System.EventHandler(this.bttnEliminar_Click);
             // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "nombres";
-            this.Nombre.HeaderText = "Nombres";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Legajo
-            // 
-            this.Legajo.DataPropertyName = "legajo";
-            this.Legajo.HeaderText = "Legajo";
-            this.Legajo.Name = "Legajo";
-            this.Legajo.ReadOnly = true;
-            this.Legajo.Width = 70;
-            // 
-            // Apellido
-            // 
-            this.Apellido.DataPropertyName = "apellido";
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.ReadOnly = true;
-            // 
-            // CodigoProyecto
-            // 
-            this.CodigoProyecto.DataPropertyName = "cod_proyecto_asignado";
-            this.CodigoProyecto.HeaderText = "Codigo Proyecto";
-            this.CodigoProyecto.Name = "CodigoProyecto";
-            this.CodigoProyecto.ReadOnly = true;
-            this.CodigoProyecto.Width = 70;
-            // 
-            // Documento
-            // 
-            this.Documento.DataPropertyName = "nro_documento";
-            this.Documento.HeaderText = "Documento";
-            this.Documento.Name = "Documento";
-            this.Documento.ReadOnly = true;
-            // 
             // txtDocumento
             // 
             this.txtDocumento.Location = new System.Drawing.Point(111, 144);
@@ -485,7 +485,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(726, 453);
+            this.ClientSize = new System.Drawing.Size(793, 453);
             this.Controls.Add(this.txtDocumento);
             this.Controls.Add(this.bttnEliminar);
             this.Controls.Add(this.txtNombrePersonal);
@@ -528,7 +528,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Usuario);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
             this.Name = "FrmABMPersonal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmABMPersonal";
             this.Load += new System.EventHandler(this.FrmABMPersonal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrillaDelPersonal)).EndInit();

@@ -54,10 +54,10 @@ namespace TrabajoPAVI_Grupo2
             // btnActualizarEtapaXProyecto
             // 
             this.btnActualizarEtapaXProyecto.BackColor = System.Drawing.Color.Yellow;
-            this.btnActualizarEtapaXProyecto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnActualizarEtapaXProyecto.Location = new System.Drawing.Point(184, 298);
+            this.btnActualizarEtapaXProyecto.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnActualizarEtapaXProyecto.Location = new System.Drawing.Point(158, 258);
             this.btnActualizarEtapaXProyecto.Name = "btnActualizarEtapaXProyecto";
-            this.btnActualizarEtapaXProyecto.Size = new System.Drawing.Size(131, 67);
+            this.btnActualizarEtapaXProyecto.Size = new System.Drawing.Size(112, 58);
             this.btnActualizarEtapaXProyecto.TabIndex = 15;
             this.btnActualizarEtapaXProyecto.Text = "Actualizar Etapa por proyecto";
             this.btnActualizarEtapaXProyecto.UseVisualStyleBackColor = false;
@@ -66,8 +66,8 @@ namespace TrabajoPAVI_Grupo2
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(309, 32);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.Location = new System.Drawing.Point(265, 28);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(227, 31);
             this.lblTitulo.TabIndex = 14;
@@ -76,8 +76,8 @@ namespace TrabajoPAVI_Grupo2
             // lblIdEtapa
             // 
             this.lblIdEtapa.AutoSize = true;
-            this.lblIdEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIdEtapa.Location = new System.Drawing.Point(147, 151);
+            this.lblIdEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblIdEtapa.Location = new System.Drawing.Point(126, 131);
             this.lblIdEtapa.Name = "lblIdEtapa";
             this.lblIdEtapa.Size = new System.Drawing.Size(57, 21);
             this.lblIdEtapa.TabIndex = 12;
@@ -93,11 +93,11 @@ namespace TrabajoPAVI_Grupo2
             this.id_etapa,
             this.Fecha_inicio,
             this.Fecha_fin});
-            this.gdrEtapasXProyecto.Location = new System.Drawing.Point(493, 99);
+            this.gdrEtapasXProyecto.Location = new System.Drawing.Point(423, 86);
             this.gdrEtapasXProyecto.Name = "gdrEtapasXProyecto";
             this.gdrEtapasXProyecto.ReadOnly = true;
             this.gdrEtapasXProyecto.RowTemplate.Height = 25;
-            this.gdrEtapasXProyecto.Size = new System.Drawing.Size(384, 323);
+            this.gdrEtapasXProyecto.Size = new System.Drawing.Size(392, 280);
             this.gdrEtapasXProyecto.TabIndex = 11;
             this.gdrEtapasXProyecto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrEtapasXProyecto_CellClick);
             // 
@@ -134,8 +134,8 @@ namespace TrabajoPAVI_Grupo2
             // lblICodProyecto
             // 
             this.lblICodProyecto.AutoSize = true;
-            this.lblICodProyecto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblICodProyecto.Location = new System.Drawing.Point(36, 96);
+            this.lblICodProyecto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblICodProyecto.Location = new System.Drawing.Point(31, 83);
             this.lblICodProyecto.Name = "lblICodProyecto";
             this.lblICodProyecto.Size = new System.Drawing.Size(169, 21);
             this.lblICodProyecto.TabIndex = 9;
@@ -144,10 +144,10 @@ namespace TrabajoPAVI_Grupo2
             // brnAgregarEtapaXProyecto
             // 
             this.brnAgregarEtapaXProyecto.BackColor = System.Drawing.Color.Lime;
-            this.brnAgregarEtapaXProyecto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.brnAgregarEtapaXProyecto.Location = new System.Drawing.Point(36, 298);
+            this.brnAgregarEtapaXProyecto.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.brnAgregarEtapaXProyecto.Location = new System.Drawing.Point(31, 258);
             this.brnAgregarEtapaXProyecto.Name = "brnAgregarEtapaXProyecto";
-            this.brnAgregarEtapaXProyecto.Size = new System.Drawing.Size(126, 67);
+            this.brnAgregarEtapaXProyecto.Size = new System.Drawing.Size(108, 58);
             this.brnAgregarEtapaXProyecto.TabIndex = 8;
             this.brnAgregarEtapaXProyecto.Text = "Agregar Etapa por Proyecto";
             this.brnAgregarEtapaXProyecto.UseVisualStyleBackColor = false;
@@ -155,26 +155,26 @@ namespace TrabajoPAVI_Grupo2
             // 
             // txtFechaInicio
             // 
-            this.txtFechaInicio.Location = new System.Drawing.Point(225, 215);
+            this.txtFechaInicio.Location = new System.Drawing.Point(193, 186);
             this.txtFechaInicio.Mask = "00/00/0000";
             this.txtFechaInicio.Name = "txtFechaInicio";
-            this.txtFechaInicio.Size = new System.Drawing.Size(100, 23);
+            this.txtFechaInicio.Size = new System.Drawing.Size(86, 20);
             this.txtFechaInicio.TabIndex = 16;
             this.txtFechaInicio.ValidatingType = typeof(System.DateTime);
             // 
             // cmbEtapa
             // 
             this.cmbEtapa.FormattingEnabled = true;
-            this.cmbEtapa.Location = new System.Drawing.Point(225, 151);
+            this.cmbEtapa.Location = new System.Drawing.Point(193, 131);
             this.cmbEtapa.Name = "cmbEtapa";
-            this.cmbEtapa.Size = new System.Drawing.Size(195, 23);
+            this.cmbEtapa.Size = new System.Drawing.Size(168, 21);
             this.cmbEtapa.TabIndex = 17;
             // 
             // lblFechaInicio
             // 
             this.lblFechaInicio.AutoSize = true;
-            this.lblFechaInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFechaInicio.Location = new System.Drawing.Point(76, 213);
+            this.lblFechaInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblFechaInicio.Location = new System.Drawing.Point(65, 185);
             this.lblFechaInicio.Name = "lblFechaInicio";
             this.lblFechaInicio.Size = new System.Drawing.Size(128, 21);
             this.lblFechaInicio.TabIndex = 18;
@@ -183,8 +183,8 @@ namespace TrabajoPAVI_Grupo2
             // lblFechaFin
             // 
             this.lblFechaFin.AutoSize = true;
-            this.lblFechaFin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblFechaFin.Location = new System.Drawing.Point(29, 256);
+            this.lblFechaFin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblFechaFin.Location = new System.Drawing.Point(25, 222);
             this.lblFechaFin.Name = "lblFechaFin";
             this.lblFechaFin.Size = new System.Drawing.Size(175, 21);
             this.lblFechaFin.TabIndex = 19;
@@ -192,20 +192,20 @@ namespace TrabajoPAVI_Grupo2
             // 
             // txtFechaFin
             // 
-            this.txtFechaFin.Location = new System.Drawing.Point(225, 258);
+            this.txtFechaFin.Location = new System.Drawing.Point(193, 224);
             this.txtFechaFin.Mask = "00/00/0000";
             this.txtFechaFin.Name = "txtFechaFin";
-            this.txtFechaFin.Size = new System.Drawing.Size(100, 23);
+            this.txtFechaFin.Size = new System.Drawing.Size(86, 20);
             this.txtFechaFin.TabIndex = 20;
             this.txtFechaFin.ValidatingType = typeof(System.DateTime);
             // 
             // btnLimpiarCamposExP
             // 
             this.btnLimpiarCamposExP.BackColor = System.Drawing.Color.White;
-            this.btnLimpiarCamposExP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLimpiarCamposExP.Location = new System.Drawing.Point(334, 298);
+            this.btnLimpiarCamposExP.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnLimpiarCamposExP.Location = new System.Drawing.Point(286, 258);
             this.btnLimpiarCamposExP.Name = "btnLimpiarCamposExP";
-            this.btnLimpiarCamposExP.Size = new System.Drawing.Size(126, 67);
+            this.btnLimpiarCamposExP.Size = new System.Drawing.Size(108, 58);
             this.btnLimpiarCamposExP.TabIndex = 21;
             this.btnLimpiarCamposExP.Text = "Limpiar Campos";
             this.btnLimpiarCamposExP.UseVisualStyleBackColor = false;
@@ -214,28 +214,28 @@ namespace TrabajoPAVI_Grupo2
             // cmbCodProyecto
             // 
             this.cmbCodProyecto.FormattingEnabled = true;
-            this.cmbCodProyecto.Location = new System.Drawing.Point(225, 96);
+            this.cmbCodProyecto.Location = new System.Drawing.Point(193, 83);
             this.cmbCodProyecto.Name = "cmbCodProyecto";
-            this.cmbCodProyecto.Size = new System.Drawing.Size(195, 23);
+            this.cmbCodProyecto.Size = new System.Drawing.Size(168, 21);
             this.cmbCodProyecto.TabIndex = 22;
             // 
             // btnEliminarEtapa
             // 
             this.btnEliminarEtapa.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminarEtapa.Location = new System.Drawing.Point(184, 371);
+            this.btnEliminarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnEliminarEtapa.Location = new System.Drawing.Point(158, 322);
             this.btnEliminarEtapa.Name = "btnEliminarEtapa";
-            this.btnEliminarEtapa.Size = new System.Drawing.Size(126, 67);
+            this.btnEliminarEtapa.Size = new System.Drawing.Size(108, 58);
             this.btnEliminarEtapa.TabIndex = 25;
             this.btnEliminarEtapa.Text = "Eliminar Etapa";
             this.btnEliminarEtapa.UseVisualStyleBackColor = false;
             this.btnEliminarEtapa.Click += new System.EventHandler(this.btnEliminarEtapa_Click);
             // 
-            // FormABMEtapasXProyecto
+            // FrmABMEtapasXProyecto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 450);
+            this.ClientSize = new System.Drawing.Size(841, 390);
             this.Controls.Add(this.btnEliminarEtapa);
             this.Controls.Add(this.cmbCodProyecto);
             this.Controls.Add(this.btnLimpiarCamposExP);
@@ -250,7 +250,9 @@ namespace TrabajoPAVI_Grupo2
             this.Controls.Add(this.gdrEtapasXProyecto);
             this.Controls.Add(this.lblICodProyecto);
             this.Controls.Add(this.brnAgregarEtapaXProyecto);
-            this.Name = "FormABMEtapasXProyecto";
+            this.MaximizeBox = false;
+            this.Name = "FrmABMEtapasXProyecto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormABMEtapasXProyecto";
             this.Load += new System.EventHandler(this.FormABMEtapasXProyecto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gdrEtapasXProyecto)).EndInit();

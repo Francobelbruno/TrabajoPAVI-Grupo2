@@ -48,10 +48,10 @@ namespace trabajoPAVI_Grupo2
             // brnAgregarEtapa
             // 
             this.brnAgregarEtapa.BackColor = System.Drawing.Color.Lime;
-            this.brnAgregarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.brnAgregarEtapa.Location = new System.Drawing.Point(34, 311);
+            this.brnAgregarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.brnAgregarEtapa.Location = new System.Drawing.Point(33, 191);
             this.brnAgregarEtapa.Name = "brnAgregarEtapa";
-            this.brnAgregarEtapa.Size = new System.Drawing.Size(126, 63);
+            this.brnAgregarEtapa.Size = new System.Drawing.Size(108, 55);
             this.brnAgregarEtapa.TabIndex = 0;
             this.brnAgregarEtapa.Text = "Agregar Etapa";
             this.brnAgregarEtapa.UseVisualStyleBackColor = false;
@@ -60,8 +60,8 @@ namespace trabajoPAVI_Grupo2
             // lblIdEtapa
             // 
             this.lblIdEtapa.AutoSize = true;
-            this.lblIdEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIdEtapa.Location = new System.Drawing.Point(109, 100);
+            this.lblIdEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblIdEtapa.Location = new System.Drawing.Point(93, 87);
             this.lblIdEtapa.Name = "lblIdEtapa";
             this.lblIdEtapa.Size = new System.Drawing.Size(29, 21);
             this.lblIdEtapa.TabIndex = 1;
@@ -69,9 +69,9 @@ namespace trabajoPAVI_Grupo2
             // 
             // txtIdEtapa
             // 
-            this.txtIdEtapa.Location = new System.Drawing.Point(189, 102);
+            this.txtIdEtapa.Location = new System.Drawing.Point(162, 88);
             this.txtIdEtapa.Name = "txtIdEtapa";
-            this.txtIdEtapa.Size = new System.Drawing.Size(58, 23);
+            this.txtIdEtapa.Size = new System.Drawing.Size(50, 20);
             this.txtIdEtapa.TabIndex = 2;
             // 
             // gdrEtapas
@@ -82,11 +82,11 @@ namespace trabajoPAVI_Grupo2
             this.gdrEtapas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_etapa,
             this.Descripcion});
-            this.gdrEtapas.Location = new System.Drawing.Point(512, 102);
+            this.gdrEtapas.Location = new System.Drawing.Point(439, 60);
             this.gdrEtapas.Name = "gdrEtapas";
             this.gdrEtapas.ReadOnly = true;
             this.gdrEtapas.RowTemplate.Height = 25;
-            this.gdrEtapas.Size = new System.Drawing.Size(293, 323);
+            this.gdrEtapas.Size = new System.Drawing.Size(251, 280);
             this.gdrEtapas.TabIndex = 3;
             this.gdrEtapas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrEtapas_CellClick);
             // 
@@ -107,16 +107,16 @@ namespace trabajoPAVI_Grupo2
             // 
             // txtDescripcionEtapa
             // 
-            this.txtDescripcionEtapa.Location = new System.Drawing.Point(189, 151);
+            this.txtDescripcionEtapa.Location = new System.Drawing.Point(162, 131);
             this.txtDescripcionEtapa.Name = "txtDescripcionEtapa";
-            this.txtDescripcionEtapa.Size = new System.Drawing.Size(261, 23);
+            this.txtDescripcionEtapa.Size = new System.Drawing.Size(224, 20);
             this.txtDescripcionEtapa.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(34, 149);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(29, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 21);
             this.label1.TabIndex = 4;
@@ -125,8 +125,8 @@ namespace trabajoPAVI_Grupo2
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(387, 32);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.Location = new System.Drawing.Point(332, 28);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(83, 31);
             this.lblTitulo.TabIndex = 6;
@@ -135,10 +135,10 @@ namespace trabajoPAVI_Grupo2
             // btnActualizarEtapa
             // 
             this.btnActualizarEtapa.BackColor = System.Drawing.Color.Yellow;
-            this.btnActualizarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnActualizarEtapa.Location = new System.Drawing.Point(189, 311);
+            this.btnActualizarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnActualizarEtapa.Location = new System.Drawing.Point(166, 191);
             this.btnActualizarEtapa.Name = "btnActualizarEtapa";
-            this.btnActualizarEtapa.Size = new System.Drawing.Size(126, 63);
+            this.btnActualizarEtapa.Size = new System.Drawing.Size(108, 55);
             this.btnActualizarEtapa.TabIndex = 7;
             this.btnActualizarEtapa.Text = "Actualizar Etapa";
             this.btnActualizarEtapa.UseVisualStyleBackColor = false;
@@ -147,10 +147,10 @@ namespace trabajoPAVI_Grupo2
             // btnLimpiarCamposExP
             // 
             this.btnLimpiarCamposExP.BackColor = System.Drawing.Color.White;
-            this.btnLimpiarCamposExP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLimpiarCamposExP.Location = new System.Drawing.Point(346, 311);
+            this.btnLimpiarCamposExP.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnLimpiarCamposExP.Location = new System.Drawing.Point(301, 191);
             this.btnLimpiarCamposExP.Name = "btnLimpiarCamposExP";
-            this.btnLimpiarCamposExP.Size = new System.Drawing.Size(126, 63);
+            this.btnLimpiarCamposExP.Size = new System.Drawing.Size(108, 55);
             this.btnLimpiarCamposExP.TabIndex = 22;
             this.btnLimpiarCamposExP.Text = "Limpiar Campos";
             this.btnLimpiarCamposExP.UseVisualStyleBackColor = false;
@@ -159,10 +159,10 @@ namespace trabajoPAVI_Grupo2
             // btnEliminarEtapa
             // 
             this.btnEliminarEtapa.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminarEtapa.Location = new System.Drawing.Point(189, 396);
+            this.btnEliminarEtapa.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnEliminarEtapa.Location = new System.Drawing.Point(166, 264);
             this.btnEliminarEtapa.Name = "btnEliminarEtapa";
-            this.btnEliminarEtapa.Size = new System.Drawing.Size(126, 63);
+            this.btnEliminarEtapa.Size = new System.Drawing.Size(108, 55);
             this.btnEliminarEtapa.TabIndex = 24;
             this.btnEliminarEtapa.Text = "Eliminar Etapa";
             this.btnEliminarEtapa.UseVisualStyleBackColor = false;
@@ -170,9 +170,9 @@ namespace trabajoPAVI_Grupo2
             // 
             // formABMEtapa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 482);
+            this.ClientSize = new System.Drawing.Size(718, 374);
             this.Controls.Add(this.btnEliminarEtapa);
             this.Controls.Add(this.btnLimpiarCamposExP);
             this.Controls.Add(this.btnActualizarEtapa);
@@ -183,7 +183,9 @@ namespace trabajoPAVI_Grupo2
             this.Controls.Add(this.txtIdEtapa);
             this.Controls.Add(this.lblIdEtapa);
             this.Controls.Add(this.brnAgregarEtapa);
+            this.MaximizeBox = false;
             this.Name = "formABMEtapa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario ABM Etapas";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gdrEtapas)).EndInit();
