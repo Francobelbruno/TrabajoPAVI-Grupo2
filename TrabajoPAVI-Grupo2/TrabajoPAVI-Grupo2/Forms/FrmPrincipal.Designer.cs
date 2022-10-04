@@ -32,15 +32,18 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMEtapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMEtapasXProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMProyectosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otrosABMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMBarriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBMEtapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBMEtapasXProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,18 +71,49 @@
             // 
             // productosToolStripMenuItem
             // 
+            this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMProductosToolStripMenuItem});
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.productosToolStripMenuItem.Text = "Productos";
+            // 
+            // aBMProductosToolStripMenuItem
+            // 
+            this.aBMProductosToolStripMenuItem.Name = "aBMProductosToolStripMenuItem";
+            this.aBMProductosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.aBMProductosToolStripMenuItem.Text = "ABM Productos";
+            this.aBMProductosToolStripMenuItem.Click += new System.EventHandler(this.aBMProductosToolStripMenuItem_Click);
             // 
             // proyectosToolStripMenuItem
             // 
             this.proyectosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMEtapasToolStripMenuItem,
-            this.aBMEtapasXProyectoToolStripMenuItem});
+            this.aBMEtapasXProyectoToolStripMenuItem,
+            this.aBMProyectosToolStripMenuItem});
             this.proyectosToolStripMenuItem.Name = "proyectosToolStripMenuItem";
             this.proyectosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.proyectosToolStripMenuItem.Text = "Proyectos";
+            // 
+            // aBMEtapasToolStripMenuItem
+            // 
+            this.aBMEtapasToolStripMenuItem.Name = "aBMEtapasToolStripMenuItem";
+            this.aBMEtapasToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.aBMEtapasToolStripMenuItem.Text = "ABM Etapas";
+            this.aBMEtapasToolStripMenuItem.Click += new System.EventHandler(this.aBMEtapasToolStripMenuItem_Click);
+            // 
+            // aBMEtapasXProyectoToolStripMenuItem
+            // 
+            this.aBMEtapasXProyectoToolStripMenuItem.Name = "aBMEtapasXProyectoToolStripMenuItem";
+            this.aBMEtapasXProyectoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.aBMEtapasXProyectoToolStripMenuItem.Text = "ABM Etapas x Proyecto";
+            this.aBMEtapasXProyectoToolStripMenuItem.Click += new System.EventHandler(this.aBMEtapasXProyectoToolStripMenuItem_Click);
+            // 
+            // aBMProyectosToolStripMenuItem
+            // 
+            this.aBMProyectosToolStripMenuItem.Name = "aBMProyectosToolStripMenuItem";
+            this.aBMProyectosToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.aBMProyectosToolStripMenuItem.Text = "ABM Proyectos";
+            this.aBMProyectosToolStripMenuItem.Click += new System.EventHandler(this.aBMProyectosToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 
@@ -98,6 +132,8 @@
             // 
             // clientesToolStripMenuItem
             // 
+            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMClientesToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.clientesToolStripMenuItem.Text = "Clientes";
@@ -123,18 +159,12 @@
             this.aBMBarriosToolStripMenuItem.Text = "ABM Barrios";
             this.aBMBarriosToolStripMenuItem.Click += new System.EventHandler(this.aBMBarriosToolStripMenuItem_Click);
             // 
-            // aBMEtapasToolStripMenuItem
+            // aBMClientesToolStripMenuItem
             // 
-            this.aBMEtapasToolStripMenuItem.Name = "aBMEtapasToolStripMenuItem";
-            this.aBMEtapasToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.aBMEtapasToolStripMenuItem.Text = "ABM Etapas";
-            this.aBMEtapasToolStripMenuItem.Click += new System.EventHandler(this.aBMEtapasToolStripMenuItem_Click);
-            // 
-            // aBMEtapasXProyectoToolStripMenuItem
-            // 
-            this.aBMEtapasXProyectoToolStripMenuItem.Name = "aBMEtapasXProyectoToolStripMenuItem";
-            this.aBMEtapasXProyectoToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.aBMEtapasXProyectoToolStripMenuItem.Text = "ABM Etapas x Proyecto";
+            this.aBMClientesToolStripMenuItem.Name = "aBMClientesToolStripMenuItem";
+            this.aBMClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aBMClientesToolStripMenuItem.Text = "ABM Clientes";
+            this.aBMClientesToolStripMenuItem.Click += new System.EventHandler(this.aBMClientesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -172,5 +202,8 @@
         private System.Windows.Forms.ToolStripMenuItem aBMPersonalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMEtapasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMEtapasXProyectoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMProyectosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMClientesToolStripMenuItem;
     }
 }

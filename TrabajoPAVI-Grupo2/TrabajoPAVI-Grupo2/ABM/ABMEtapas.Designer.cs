@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace TPPAV1
+namespace trabajoPAVI_Grupo2
 {
     partial class formABMEtapa
     {

@@ -11,12 +11,13 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabajoPAVI_Grupo2;
 
 /// PROBLEMAS   - DEJA AGREGAR ETAPA AUNQUE YA EXISTA EL ID
 ///             - DEJA ACTUALIZAR ETAPA Y CAMBIAR EL ID
 ///             - AL ACTUALIZAR SI SE CAMBIA EL ID Y ESTE NO EXISTE TE DICE QUE SE ACTUALIZÓ PERO NO PASÓ NADA
 
-namespace TPPAV1
+namespace trabajoPAVI_Grupo2
 {
     public partial class formABMEtapa : Form
     {
@@ -34,10 +35,6 @@ namespace TPPAV1
         {
 
         }
-
-
-
-
 
         /// ----------------------- FUNCIONES PARA CARGAR, OBTENER Y LIMPIAR DATOS DE CAMPOS -----------------------
 

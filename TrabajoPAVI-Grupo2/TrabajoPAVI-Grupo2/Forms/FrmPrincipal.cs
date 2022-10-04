@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TPPAV1;
+using trabajoPAVI_Grupo2;
 using TrabajoPAVI_Grupo2.ABM;
 using TrabajoPAVI_Grupo2.Entidades;
 
@@ -41,6 +42,30 @@ namespace TrabajoPAVI_Grupo2.Forms
         {
             formABMEtapa altaEtapas = new formABMEtapa();
             altaEtapas.Show();
+        }
+
+        private void aBMProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMProductos altaProductos = new ABMProductos();
+            altaProductos.Show();
+        }
+
+        private void aBMProyectosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABMProyecto altaProyecto = new ABMProyecto();
+            altaProyecto.Show();
+        }
+
+        private void aBMEtapasXProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmABMEtapasXProyecto altaEtapaxProy = new FrmABMEtapasXProyecto();
+            altaEtapaxProy.Show();
+        }
+
+        private void aBMClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            abmClientes altaClientes = new abmClientes();
+            altaClientes.Show();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace PruebaPAV
+﻿namespace TrabajoPAVI_Grupo2
 {
     partial class abmClientes
     {
@@ -31,28 +31,30 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.cmbBarrio = new System.Windows.Forms.ComboBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.mskTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtMail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblBarrio = new System.Windows.Forms.Label();
             this.lblNro = new System.Windows.Forms.Label();
             this.lblCalle = new System.Windows.Forms.Label();
             this.txtCalle = new System.Windows.Forms.TextBox();
-            this.mskNro = new System.Windows.Forms.MaskedTextBox();
+            this.txtNroCalle = new System.Windows.Forms.MaskedTextBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.dgwClientes = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dataCliente = new System.Windows.Forms.DataGridView();
             this.id_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwClientes)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregar
@@ -88,14 +90,14 @@
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre:";
             // 
-            // mskTelefono
+            // txtTelefono
             // 
-            this.mskTelefono.Location = new System.Drawing.Point(100, 134);
-            this.mskTelefono.Margin = new System.Windows.Forms.Padding(2);
-            this.mskTelefono.Mask = "000-000-0000";
-            this.mskTelefono.Name = "mskTelefono";
-            this.mskTelefono.Size = new System.Drawing.Size(82, 20);
-            this.mskTelefono.TabIndex = 3;
+            this.txtTelefono.Location = new System.Drawing.Point(100, 134);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.Mask = "999999999";
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(82, 20);
+            this.txtTelefono.TabIndex = 3;
             // 
             // txtNombre
             // 
@@ -135,13 +137,13 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Telefono:";
             // 
-            // txtEmail
+            // txtMail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(100, 173);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(130, 20);
-            this.txtEmail.TabIndex = 8;
+            this.txtMail.Location = new System.Drawing.Point(100, 173);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(130, 20);
+            this.txtMail.TabIndex = 8;
             // 
             // lblEmail
             // 
@@ -195,15 +197,15 @@
             this.txtCalle.Size = new System.Drawing.Size(125, 20);
             this.txtCalle.TabIndex = 13;
             // 
-            // mskNro
+            // txtNroCalle
             // 
-            this.mskNro.Location = new System.Drawing.Point(329, 131);
-            this.mskNro.Margin = new System.Windows.Forms.Padding(2);
-            this.mskNro.Mask = "9999";
-            this.mskNro.Name = "mskNro";
-            this.mskNro.Size = new System.Drawing.Size(68, 20);
-            this.mskNro.TabIndex = 14;
-            this.mskNro.ValidatingType = typeof(int);
+            this.txtNroCalle.Location = new System.Drawing.Point(329, 131);
+            this.txtNroCalle.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNroCalle.Mask = "9999";
+            this.txtNroCalle.Name = "txtNroCalle";
+            this.txtNroCalle.Size = new System.Drawing.Size(68, 20);
+            this.txtNroCalle.TabIndex = 14;
+            this.txtNroCalle.ValidatingType = typeof(int);
             // 
             // btnConsultar
             // 
@@ -242,6 +244,7 @@
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -256,35 +259,24 @@
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // dgwClientes
+            // dataCliente
             // 
-            this.dgwClientes.AllowUserToAddRows = false;
-            this.dgwClientes.AllowUserToDeleteRows = false;
-            this.dgwClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataCliente.AllowUserToAddRows = false;
+            this.dataCliente.AllowUserToDeleteRows = false;
+            this.dataCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_cliente,
             this.nombre,
             this.apellido});
-            this.dgwClientes.Location = new System.Drawing.Point(470, 53);
-            this.dgwClientes.Margin = new System.Windows.Forms.Padding(2);
-            this.dgwClientes.Name = "dgwClientes";
-            this.dgwClientes.ReadOnly = true;
-            this.dgwClientes.RowHeadersWidth = 62;
-            this.dgwClientes.RowTemplate.Height = 28;
-            this.dgwClientes.Size = new System.Drawing.Size(345, 263);
-            this.dgwClientes.TabIndex = 19;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(92, 21);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 24);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Registrar Nuevo Cliente";
+            this.dataCliente.Location = new System.Drawing.Point(470, 53);
+            this.dataCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.dataCliente.Name = "dataCliente";
+            this.dataCliente.ReadOnly = true;
+            this.dataCliente.RowHeadersWidth = 62;
+            this.dataCliente.RowTemplate.Height = 28;
+            this.dataCliente.Size = new System.Drawing.Size(345, 263);
+            this.dataCliente.TabIndex = 19;
+            this.dataCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCliente_CellContentClick);
             // 
             // id_cliente
             // 
@@ -313,29 +305,62 @@
             this.apellido.ReadOnly = true;
             this.apellido.Width = 150;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(92, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(231, 24);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Registrar Nuevo Cliente";
+            // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.Location = new System.Drawing.Point(315, 173);
+            this.txtIdCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(130, 20);
+            this.txtIdCliente.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(278, 173);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 20);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "ID:";
+            // 
             // abmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 336);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dgwClientes);
+            this.Controls.Add(this.dataCliente);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnConsultar);
-            this.Controls.Add(this.mskNro);
+            this.Controls.Add(this.txtNroCalle);
             this.Controls.Add(this.txtCalle);
             this.Controls.Add(this.lblCalle);
             this.Controls.Add(this.lblNro);
             this.Controls.Add(this.lblBarrio);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtMail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.mskTelefono);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.cmbBarrio);
             this.Controls.Add(this.btnAgregar);
@@ -343,7 +368,7 @@
             this.Name = "abmClientes";
             this.Text = "ABM Clientes";
             this.Load += new System.EventHandler(this.abmClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,27 +379,29 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ComboBox cmbBarrio;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.MaskedTextBox mskTelefono;
+        private System.Windows.Forms.MaskedTextBox txtTelefono;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblBarrio;
         private System.Windows.Forms.Label lblNro;
         private System.Windows.Forms.Label lblCalle;
         private System.Windows.Forms.TextBox txtCalle;
-        private System.Windows.Forms.MaskedTextBox mskNro;
+        private System.Windows.Forms.MaskedTextBox txtNroCalle;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.DataGridView dgwClientes;
+        private System.Windows.Forms.DataGridView dataCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.ConstrainedExecution;
 
-namespace TPPAV1
+namespace TrabajoPAVI_Grupo2
 {
     public partial class FrmABMEtapasXProyecto : Form
     {

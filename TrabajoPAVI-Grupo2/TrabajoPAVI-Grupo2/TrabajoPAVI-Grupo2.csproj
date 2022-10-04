@@ -53,11 +53,23 @@
     <Compile Include="ABM\ABMClientes.Designer.cs">
       <DependentUpon>ABMClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABM\formABMEtapas.cs">
+    <Compile Include="ABM\ABMProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABM\formABMEtapas.Designer.cs">
-      <DependentUpon>formABMEtapas.cs</DependentUpon>
+    <Compile Include="ABM\ABMProductos.Designer.cs">
+      <DependentUpon>ABMProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\ABMProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\ABMProyecto.Designer.cs">
+      <DependentUpon>ABMProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\ABMEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\ABMEtapas.Designer.cs">
+      <DependentUpon>ABMEtapas.cs</DependentUpon>
     </Compile>
     <Compile Include="ABM\FrmABMEtapasXProyecto.cs">
       <SubType>Form</SubType>
@@ -95,11 +107,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\SolicitarID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SolicitarID.Designer.cs">
+      <DependentUpon>SolicitarID.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ABM\ABMClientes.resx">
       <DependentUpon>ABMClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABM\formABMEtapas.resx">
-      <DependentUpon>formABMEtapas.cs</DependentUpon>
+    <EmbeddedResource Include="ABM\ABMProductos.resx">
+      <DependentUpon>ABMProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\ABMProyecto.resx">
+      <DependentUpon>ABMProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\ABMEtapas.resx">
+      <DependentUpon>ABMEtapas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\FrmABMEtapasXProyecto.resx">
       <DependentUpon>FrmABMEtapasXProyecto.cs</DependentUpon>
@@ -125,6 +149,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\SolicitarID.resx">
+      <DependentUpon>SolicitarID.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
