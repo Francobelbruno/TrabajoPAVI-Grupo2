@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabajoPAVI_Grupo2.ABM;
 
 namespace TrabajoPAVI_Grupo2
 {
@@ -16,7 +17,7 @@ namespace TrabajoPAVI_Grupo2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBarrios());
+            Application.Run(new FrmABMPersonal());
         }
     }
 }

@@ -59,6 +59,13 @@
     <Compile Include="ABM\FrmABMBarrios.Designer.cs">
       <DependentUpon>FrmABMBarrios.cs</DependentUpon>
     </Compile>
+    <Compile Include="ABM\FrmABMPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\FrmABMPersonal.Designer.cs">
+      <DependentUpon>FrmABMPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Personal.cs" />
     <Compile Include="Forms\FrmInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ABM\FrmABMBarrios.resx">
       <DependentUpon>FrmABMBarrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\FrmABMPersonal.resx">
+      <DependentUpon>FrmABMPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

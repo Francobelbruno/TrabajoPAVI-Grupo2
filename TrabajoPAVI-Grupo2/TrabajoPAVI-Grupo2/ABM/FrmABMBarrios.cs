@@ -23,26 +23,38 @@ namespace TrabajoPAVI_Grupo2
 
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
-            SqlCommand cmd = new SqlCommand();
 
-                
-            string consulta = "SELECT * FROM Ciudades ";
-            
-            cmd.Parameters.Clear();        
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = consulta;
-            cn.Open();
-            cmd.Connection = cn;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
 
-            DataTable tabla = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);    
-            da.Fill(tabla);
-            
-            cmbCiudad.DataSource = tabla;
-            cmbCiudad.DisplayMember = "Nombres";
-            cmbCiudad.ValueMember = "id_ciudad";
-            cmbCiudad.SelectedIndex = -1;
-            cn.Close();
+
+                string consulta = "SELECT * FROM Ciudades ";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                cmbCiudad.DataSource = tabla;
+                cmbCiudad.DisplayMember = "Nombres";
+                cmbCiudad.ValueMember = "id_ciudad";
+                cmbCiudad.SelectedIndex = -1;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
             CargarGrillaBarrios();
         }
 
